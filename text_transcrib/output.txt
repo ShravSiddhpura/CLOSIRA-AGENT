@@ -1,0 +1,98 @@
+╭───────────────────────────────────────────────────╮
+│ Closira AI Agent Active (Powered by GPT-OSS-120B) │
+│ Type 'quit' to end session and generate summary.  │
+╰───────────────────────────────────────────────────╯
+
+User: hi
+System Log: Greeting detected -> qualify
+
+AI: Are you interested in Botox, Fillers, or a general consultation today?
+
+User: i need fillers
+
+AI: Fillers from £250. Hours: Mon-Sat, 9 am-7 pm. Booking: Via WhatsApp or website. 24hr cancellation required..
+
+User: do you do nails?
+System Log: Flagged -> User asked about a service (nails) not listed in the SOP services.
+
+AI: Sorry I can't assist you with this, I'm going to connect you with a human specialist right away. While we wait, is there 
+anything else I can help you with from our standard services?
+
+User: quit
+
+Session ended by user. Generating summary...
+╭─────────────────────────────────────────────────── Final Session Summary ────────────────────────────────────────────────────╮
+│ **Customer Intent**                                                                                                          │
+│ - The user is interested in receiving dermal filler treatments.                                                              │
+│                                                                                                                              │
+│ **Key Details Collected**                                                                                                    │
+│ - Service requested: Fillers                                                                                                 │
+│ - Price range communicated: from £250                                                                                        │
+│ - Operating hours: Monday‑Saturday, 9 am – 7 pm                                                                              │
+│ - Booking channels: WhatsApp or website                                                                                      │
+│ - Cancellation policy: 24‑hour notice required                                                                               │
+│                                                                                                                              │
+│ **SOP Gaps Identified**                                                                                                      │
+│ - The user asked about a service (nails) that is not covered in the current Standard Operating Procedure (SOP) for cosmetic  │
+│ treatments. This triggered an escalation flag.                                                                               │
+│                                                                                                                              │
+│ **Recommended Next Action**                                                                                                  │
+│ 1. **Escalate** the conversation to a human specialist, as already initiated by the bot.                                     │
+│ 2. While waiting for the specialist, confirm whether the user needs any additional information about fillers (e.g., types,   │
+│ after‑care, availability).                                                                                                   │
+│ 3. If the user still expresses interest, have the specialist proceed with scheduling a filler appointment via the preferred  │
+│ booking channel and ensure the cancellation policy is reiterated.                                                            │
+│ 4. Document the nail‑service inquiry as a potential SOP expansion opportunity for future bot updates.                        │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+(closira_agent) jitendrasiddhpura@Jitendras-MacBook-Air closira_agent % python main.py
+╭───────────────────────────────────────────────────╮
+│ Closira AI Agent Active (Powered by GPT-OSS-120B) │
+│ Type 'quit' to end session and generate summary.  │
+╰───────────────────────────────────────────────────╯
+
+User: hi
+System Log: Greeting detected -> qualify
+
+AI: Are you interested in Botox, Fillers, or a general consultation today?
+
+User: i need fillers
+
+AI: Fillers from £250. Hours: Mon-Sat, 9 am-7 pm. Booking: Via WhatsApp or website. 24hr cancellation required..
+
+User: do you do nails?
+System Log: Flagged -> User asked about a service (nails) not listed in the SOP.
+
+AI: Sorry I can't assist you with this, I'm going to connect you with a human specialist right away. While we wait, is there 
+anything else I can help you with from our standard services?
+
+User: I am angry 
+System Log: Flagged -> angry sentiment
+
+AI: Sorry I can't assist you with this, I'm going to connect you with a human specialist right away. While we wait, is there 
+anything else I can help you with from our standard services?
+
+User: quit
+
+Session ended by user. Generating summary...
+╭─────────────────────────────────────────────────── Final Session Summary ────────────────────────────────────────────────────╮
+│ **Customer Intent**                                                                                                          │
+│ - The user is interested in obtaining dermal fillers.                                                                        │
+│                                                                                                                              │
+│ **Key Details Collected**                                                                                                    │
+│ - Service interest: Fillers (price starting at £250).                                                                        │
+│ - No additional personal or scheduling information was captured (e.g., preferred date/time, contact details).                │
+│                                                                                                                              │
+│ **SOP Gaps Identified**                                                                                                      │
+│ 1. **Unsupported Service Query** – The user asked about “nails,” a service not covered in the current SOP.                   │
+│ 2. **Negative Sentiment** – The user expressed anger, triggering an escalation flag for emotional distress.                  │
+│                                                                                                                              │
+│ **Recommended Next Action**                                                                                                  │
+│ - Immediately transfer the conversation to a human specialist (as already initiated).                                        │
+│ - The specialist should:                                                                                                     │
+│   1. Acknowledge the user’s frustration and apologize for any inconvenience.                                                 │
+│   2. Clarify that nail services are not offered, and if appropriate, suggest alternative providers or related services the   │
+│ clinic does offer.                                                                                                           │
+│   3. Gather the necessary booking details for fillers (preferred date/time, contact method, any medical considerations).     │
+│   4. Confirm the 24‑hour cancellation policy and provide the WhatsApp/website booking link.                                  │
+│   5. Document the interaction in the CRM, noting the escalation reason (unsupported service request and angry sentiment).    │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
